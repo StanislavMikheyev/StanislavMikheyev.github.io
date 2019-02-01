@@ -6,16 +6,16 @@
 }
 
 .bats-heading1 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: center;
 }
 
 .bats-heading2 {
-    font-size: 1.8vw;
+    font-size: 1.25vw;
 }
 
 .bats-normal {
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 .bats-highlight {
@@ -64,15 +64,19 @@
 
 /* Common */
 
-.gradient {
-    width: 100%;
-    margin-top: -2vh;
-    height: 2vh;
-    background-image: url("../img/gradient.png");
-    background-repeat: repeat-y;
-    background-size: 100% 3vw;
-    z-index: 100;
+.gradient, .white-gradient {
     position: relative;
+    width: 100%;
+    margin-top: -3vh;
+    height: 3.1vh;
+}
+
+.gradient {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
+
+.white-gradient {
+    background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0));
 }
 
 .gradient-no-overlay {
@@ -81,6 +85,20 @@
 
 .spacing {
     margin-bottom: 2vh;
+}
+
+.auto-margin {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .auto-margin {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
 }
 
 /* Jumbotron */
@@ -230,134 +248,60 @@
     /*
     https://www.istockphoto.com/in/photo/blurred-abstract-grey-glass-wall-building-background-gm924418868-253698746
     */
-    background: url("../img/advantage-bg-1.jpg");
+    background-image: url("../img/advantage-bg-1.jpg");
     background-color: #DBE6E5;
     z-index: 1;
 }
 
 .advantage-set-container-1:hover {
-    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), url('../img/advantage-bg-1.jpg');
+    background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), url('../img/advantage-bg-1.jpg');
 }
 
 .advantage-set-container-2 {
     /*
     https://www.istockphoto.com/in/photo/abstract-background-of-polygons-on-white-background-gm857482302-141496523
     */
-    background: url("../img/advantage-bg-2.jpg");
+    background-image: url("../img/advantage-bg-2.jpg");
     background-color: #D5E0DD;
     z-index: 2;
 }
 
 .advantage-set-container-2:hover {
-    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), url('../img/advantage-bg-2.jpg');
+    background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), url('../img/advantage-bg-2.jpg');
 }
 
 .advantage-set-container-3 {
     /*
     https://www.istockphoto.com/in/photo/connection-gm805088558-130799387
     */
-    background: url("../img/advantage-bg-3.jpg");
+    background-image: url("../img/advantage-bg-3.jpg");
     background-color: #DBE6E5;
     z-index: 3;
 }
 
 .advantage-set-container-3:hover {
-    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), url('../img/advantage-bg-3.jpg');
+    background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), url('../img/advantage-bg-3.jpg');
 }
 
-/*-----------------------------------------------------------------------------*/
-/*.carousel-section-top {*/
-/*display: table;*/
-/*padding-top: 1.5vw;*/
-/*margin: 0 5% 0 5%;*/
-/*position: relative;*/
-/*z-index: 1;*/
-/*}*/
-
-/*.carousel-text-container {*/
-/*vertical-align: top;*/
-/*display: table-cell;*/
-/*width: 50%;*/
-/*text-align: center;*/
-/*}*/
-
-/*.carousel-eye-candies {*/
-/*display: table-cell;*/
-/*width: 50%;*/
-/*height: 10vw;*/
-/*text-align: center;*/
-/*}*/
-
-/*End of slideshow section*/
-
-/*End of the monitor section*/
-
-/*.bats-heading {*/
-/*margin: 2vh 0 2vh 0;*/
-/*padding: 0 2vw 0 2vw;*/
-/*font-family: 'Ubuntu Condensed', sans-serif;*/
-/*font-size: 1.8vw;*/
-/*color: #666666;*/
-/*text-align: center;*/
-/*}*/
-
-/*.bats-style1 {*/
-/*font-family: 'Ubuntu Condensed', sans-serif;*/
-/*color: #006666;*/
-/*text-align: center;*/
-/*font-size: 1.5vw;*/
-/*}*/
-
-/*.bats-style2 {*/
-/*font-family: 'Ubuntu Condensed', sans-serif;*/
-/*text-align: center;*/
-/*font-size: 1.2vw;*/
-/*}*/
-
-/*.bats-font-highlight {*/
-/*color: #006666;*/
-/*font-weight: bold;*/
-/*}*/
-
-/*.all-caps {*/
-/*text-transform: uppercase;*/
-/*}*/
-
-/*.gradient {*/
-/*width: 100%;*/
-/*margin-top: -2vw;*/
-/*height: 2vw;*/
-/*background-image: url("../img/gradient.png");*/
-/*background-repeat: repeat-y;*/
-/*background-size: 100% 3vw;*/
-/*z-index: 100;*/
-/*position: relative;*/
-/*}*/
-
-/*.top-level-container {*/
-/*!*display: table;*!*/
-/*!*width: 100%;*!*/
-/*}*/
-
-/*@media only screen and (max-width: 800px) {*/
-/*.bats-heading {*/
-/*font-size: 3vw;*/
-/*}*/
-
-/*.bats-style1 {*/
-/*font-size: 2vw;*/
-/*}*/
-
-/*.bats-style2 {*/
-/*font-size: 1.5vw;*/
-/*}*/
-/*}*/
-
-/* Header and footer*/
-
-.bats-footer-left, .bats-footer-right {
-    height: 50vh;
+@media only screen and (max-width: 600px) {
+    .advantage-header {
+        top: 0;
+    }
+    .advantage-set {
+        opacity: 1;
+    }
+    .advantage-set-container-1 {
+        background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), url('../img/advantage-bg-1.jpg');
+    }
+    .advantage-set-container-2 {
+        background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), url('../img/advantage-bg-2.jpg');
+    }
+    .advantage-set-container-3 {
+        background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) ), url('../img/advantage-bg-3.jpg');
+    }
 }
+
+/* Footer */
 
 .bats-footer-left {
     background-image: url("../img/bats-style-bg-op.png");
@@ -367,13 +311,13 @@
     background-color: white;
 }
 
-.bats-style4 {
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 1.5vw;
-    text-align: center;
+.footer-bats-logo {
+    height: auto;
+    width: 20vmax;
+    margin-bottom: 1vh;
 }
 
-.footer-bats-logo {
+.footer-sollers-logo {
     height: auto;
     width: 20vmax;
     margin-bottom: 1vh;
@@ -384,8 +328,12 @@
     text-align: right;
 }
 
-.bats-footer-pic {
-    max-width: 40vw;
-    margin-left: -4vw;
-    margin-top: 4vw;
+.bats-footer-left, .bats-footer-right, .bats-footer-right-display-container {
+    height: 50vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .bats-footer-left, .bats-footer-right, .bats-footer-right-display-container {
+        height: 25vh;
+    }
 }
